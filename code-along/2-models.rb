@@ -15,7 +15,33 @@ Company.destroy_all
 # 1b. check out the model file
 
 # 2. insert new rows in companies table
+new_company = Company.new
+p new_company
+new_company["name"]="Apple"
+new_company["city"]="Cupertino"
+new_company["state"]="CA"
+new_company["url"]="https://apple.com"
+#p new_company
+new_company.save
+#p new_company
 
+company = Company.new
+company["name"]="Amazon"
+company["city"]="Seattle"
+company["state"]="WA"
+company["url"]="https://amazon.com"
+#p company
+company.save
+#p company
+
+company = Company.new
+company["name"]="AirBnB"
+company["city"]="San Francisco"
+company["state"]="CA"
+company["url"]="https://airbnb.com"
+#p company
+company.save
+#p company
 # 3. query companies table to find all row with California company
 
 # 4. query companies table to find single row for Apple
